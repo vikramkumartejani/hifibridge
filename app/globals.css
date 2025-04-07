@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import "tailwindcss";
+
+
+@font-face {
+     font-family: 'Rhithmic Sans';
+     src: url('/fonts/RhithmicSans-Regular.woff2') format('woff2'),
+          url('/fonts/RhithmicSans-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+body {
+     font-family: 'Rhithmic Sans', sans-serif;
+}
+
+.font-spacemono{
+     font-family: "Space Mono", monospace;
+}
+
+.animate-bounce {
+     animation: bounce 1s infinite;
+ }
