@@ -21,7 +21,7 @@ const FeatureList = () => {
                     className="flex whitespace-nowrap"
                     style={{ willChange: 'transform' }}
                     animate={{
-                         x: ['100%', '-100%'],  
+                         x: ['0%', '-100%'],  
                     }}
                     transition={{
                          duration: 30,  

@@ -16,10 +16,25 @@ body {
      font-family: 'Rhithmic Sans', sans-serif;
 }
 
-.font-spacemono{
+.font-spacemono {
      font-family: "Space Mono", monospace;
 }
 
 .animate-bounce {
      animation: bounce 1s infinite;
- }
+}
+
+
+@keyframes moveCircles {
+     0% {
+          transform: translateY(0);
+     }
+
+     100% {
+          transform: translateY(577px);
+     }
+}
+
+.moveCircles {
+     animation: moveCircles 1s infinite linear;
+}

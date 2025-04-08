@@ -6,7 +6,7 @@ const GetStarted = () => {
      return (
           <div className='flex flex-col md:flex-row '>
                <div className='relative hidden md:flex items-center justify-center p-8 aspect-[6/4] md:max-w-[460px] md:max-h-[460px] md:aspect-square w-full rounded-[30px] overflow-hidden'>
-                    <Image src='/assets/get-started.webp' alt='get-started' width={460} height={460} className='object-cover absolute inset-0 w-fit h-fit' />
+                    <Image src='/assets/get-started.webp' alt='get-started' width={460} height={460} className='object-cover absolute inset-0 w-full h-full' />
                </div>
                <div className='flex flex-col justify-center w-full rounded-[30px] bg-[#C0B395] py-8 px-6  lg:px-28 gap-4 md:gap-8'>
                     <p className='text-black text-xs tracking-[0.1em] uppercase font-spacemono'>Get started in minutes </p>
