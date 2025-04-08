@@ -44,7 +44,7 @@ const StickySection = () => {
                          <div style={{ opacity: 1, willChange: 'transform', transform: 'none' }}>
                               <div className="flex flex-col items-center justify-center w-full gap-2">
                                    <h1 className="text-black text-6xl md:text-8xl md:leading-8xl">100X</h1>
-                                   <p className="text-black text-sm max-w-md text-center">
+                                   <p className="text-black text-sm max-w-md text-center font-spacemono">
                                         Gain access to the fastest payments rails to accelerate settlement to seconds.
                                    </p>
                               </div>
@@ -63,7 +63,7 @@ const StickySection = () => {
                          <div style={{ opacity: 1, willChange: 'transform', transform: 'none' }}>
                               <div className="flex flex-col items-center justify-center w-full gap-2">
                                    <h1 className="text-black text-6xl md:text-8xl md:leading-8xl">24/7/365</h1>
-                                   <p className="text-black text-sm max-w-md text-center">
+                                   <p className="text-black text-sm max-w-md text-center font-spacemono">
                                         No weekends. No bank holidays. No downtime. Move money freely whenever you do business.
                                    </p>
                               </div>

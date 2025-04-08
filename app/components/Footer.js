@@ -32,7 +32,7 @@ const Footer = () => {
                          <div className="flex flex-col border-b-[1px] border-[#ECEAE5] pb-8 md:border-b-[0px] md:pb-0">
                               <h3 className="text-black text-lg  mb-4">Company</h3>
                               <div className="flex flex-col gap-4">
-                                   <Link href='/about' className="text-black text-sm font-spacemono">About</Link>
+                                   <Link href='/company' className="text-black text-sm font-spacemono">About</Link>
                               </div>
                          </div>
                          <div className="flex flex-col">
