@@ -123,7 +123,7 @@ const Slider = () => {
                                         </div>
                                         <div className='relative z-30 w-[18%]'>
                                              <Image
-                                                  src="slider-one-icon.svg"
+                                                  src="/assets/slider-one-icon.svg"
                                                   alt='icon'
                                                   width={123}
                                                   height={123}
