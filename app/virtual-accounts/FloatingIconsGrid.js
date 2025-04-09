@@ -4,9 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function FloatingIconsGrid() {
-     // Define icon data with specific symbols for each position
      const columns = [
-          // Left column with white dots on line
           {
                position: '12%',
                icons: [
@@ -16,7 +14,6 @@ export default function FloatingIconsGrid() {
                ],
                showDots: true
           },
-          // Middle column with white dots on line
           {
                position: '50%',
                icons: [
@@ -26,7 +23,6 @@ export default function FloatingIconsGrid() {
                ],
                showDots: true
           },
-          // Right column with white dots on line
           {
                position: '80%',
                icons: [
@@ -38,7 +34,6 @@ export default function FloatingIconsGrid() {
           }
      ];
 
-     // Map symbols to their respective SVG/image paths
      const getSymbolContent = (symbol) => {
           switch (symbol) {
                case 'T':
@@ -100,7 +95,6 @@ export default function FloatingIconsGrid() {
 
      return (
           <div className="relative w-full h-full min-h-[600px] rounded-2xl overflow-hidden">
-               {/* Background Image */}
                <Image
                     src="/assets/dollor.webp"
                     alt="Person working on laptop"
@@ -109,13 +103,10 @@ export default function FloatingIconsGrid() {
                     priority
                />
 
-               {/* Vertical lines with dots */}
                {columns.map((column, colIndex) => (
                     <div key={`column-${colIndex}`} className="absolute h-full" style={{ left: column.position }}>
-                         {/* Vertical line */}
                          <div className="absolute h-full w-0.5 bg-white/20" />
 
-                         {/* Dots on line */}
                          {column.showDots && (
                               <>
                                    <div className="absolute w-1.5 h-1.5 bg-white rounded-full"
@@ -125,7 +116,6 @@ export default function FloatingIconsGrid() {
                               </>
                          )}
 
-                         {/* Icons for this column */}
                          {column.icons.map((icon, iconIndex) => (
                               <motion.div
                                    key={`icon-${colIndex}-${iconIndex}`}
