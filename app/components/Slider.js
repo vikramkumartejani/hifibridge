@@ -9,10 +9,10 @@ const slides = [
           description:
                'HIFI provides the infrastructure for moving money across any bank or stablecoin. Build any money movement experience with our API\'s.',
           type: 'cards', 
-          topCard: '/FeatureAnimations/01/Card1.png',
-          icon: '/FeatureAnimations/01/Icon.svg',
-          bottomCard: '/FeatureAnimations/01/Card2.png',
-          bg: '/assets/card13.webp',
+          topCard: '/assets/card17.webp',
+          icon: '/assets/slider-one-icon.svg',
+          bottomCard: '/assets/card18.webp',
+          bg: '/assets/card16.webp',
      },
      {
           id: 2,
@@ -133,8 +133,8 @@ const Slider = () => {
                                              <Image
                                                   src={currentSlide.topCard}
                                                   alt='top card'
-                                                  width={240}
-                                                  height={0}
+                                                  width={500}
+                                                  height={500}
                                                   className='w-full h-auto'
                                              />
                                         </div>
@@ -143,8 +143,8 @@ const Slider = () => {
                                              <Image
                                                   src={currentSlide.icon}
                                                   alt='icon'
-                                                  width={80}
-                                                  height={80}
+                                                  width={123}
+                                                  height={123}
                                                   className='w-full h-auto'
                                              />
                                         </div>
@@ -153,8 +153,8 @@ const Slider = () => {
                                              <Image
                                                   src={currentSlide.bottomCard}
                                                   alt='bottom card'
-                                                  width={240}
-                                                  height={0}
+                                                  width={500}
+                                                  height={500}
                                                   className='w-full h-auto'
                                              />
                                         </div>
