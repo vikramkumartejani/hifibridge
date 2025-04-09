@@ -21,12 +21,14 @@ export default function ContactUS() {
                          </div>
                          <h2 className="text-black text-4xl leading-4xl md:text-5xl md:leading-5xl">Ready to modernize your payments?</h2>
                          <p className="text-black text-sm pb-12 font-spacemono">Let's get there together. Book a time to meet with our team for a HIFI Demo.</p>
-                         <Form/>
+                         <div className="md:hidden block">
+                              <Form />
+                         </div>
                     </div>
-                    
+
                     {/* Form */}
-                    <div className="hidden md:flex">
-                         <Form/>
+                    <div className="min-w-full w-full max-w-full hidden md:block">
+                         <Form />
                     </div>
                </div>
 
@@ -43,28 +45,28 @@ export default function ContactUS() {
                     <div className="grid h-full grid-cols-1 col-span-2 bg-white md:grid-cols-2">
                          <div className="col-span-1 mt-[-1px]">
                               <div className="relative flex flex-col w-full h-full px-5 pt-7 pb-10 md:px-8 md:pt-10 md:pb-16 transition-all duration-300 border border-[#ECEAE5] rounded-3xl group gap-4">
-                                   <img src="/assets/icons/Contact-InstantIntegration.svg" alt="Instant integration, infinite flexibility" loading="lazy" width={40} height={40}/>
+                                   <img src="/assets/icons/Contact-InstantIntegration.svg" alt="Instant integration, infinite flexibility" loading="lazy" width={40} height={40} />
                                    <h4 className="text-black text-xl md:text-2xl">Instant integration, infinite flexibility</h4>
                                    <p className="text-black text-sm font-spacemono">Step into the future with a cutting-edge payments stack sculpted for industry leading businesses.</p>
                               </div>
                          </div>
                          <div className="col-span-1 mt-[-1px]">
                               <div className="relative flex flex-col w-full h-full px-5 pt-7 pb-10 md:px-8 md:pt-10 md:pb-16 transition-all duration-300 border border-[#ECEAE5] rounded-3xl group gap-4">
-                                   <img src="/assets/icons/Contact-UnlockGrowth.svg" alt="Contact-UnlockGrowth" loading="lazy" width={40} height={40}/>
+                                   <img src="/assets/icons/Contact-UnlockGrowth.svg" alt="Contact-UnlockGrowth" loading="lazy" width={40} height={40} />
                                    <h4 className="text-black text-xl md:text-2xl">Unlock next-gen payments growth </h4>
                                    <p className="text-black text-sm font-spacemono">Accelerate your operations and watch your revenue growth soar with a reimagined payments stack.</p>
                               </div>
                          </div>
                          <div className="col-span-1 mt-[-1px]">
                               <div className="relative flex flex-col w-full h-full px-5 pt-7 pb-10 md:px-8 md:pt-10 md:pb-16 transition-all duration-300 border border-[#ECEAE5] rounded-3xl group gap-4">
-                                   <img src="/assets/icons/Contact-LeverageCommerce.svg" alt="Contact-LeverageCommerce" loading="lazy" width={40} height={40}/>
+                                   <img src="/assets/icons/Contact-LeverageCommerce.svg" alt="Contact-LeverageCommerce" loading="lazy" width={40} height={40} />
                                    <h4 className="text-black text-xl md:text-2xl">Leverage the future of commerce</h4>
                                    <p className="text-black text-sm font-spacemono">Leverage our multi-wallet system and reach millions of new customers.</p>
                               </div>
                          </div>
                          <div className="col-span-1 mt-[-1px]">
                               <div className="relative flex flex-col w-full h-full px-5 pt-7 pb-10 md:px-8 md:pt-10 md:pb-16 transition-all duration-300 border border-[#ECEAE5] rounded-3xl group gap-4">
-                                   <img src="/assets/icons/Contact-BuiltInCore.svg" alt="Instant integration, infinite flexibility" loading="lazy" width={40} height={40}/>
+                                   <img src="/assets/icons/Contact-BuiltInCore.svg" alt="Instant integration, infinite flexibility" loading="lazy" width={40} height={40} />
                                    <h4 className="text-black text-xl md:text-2xl">Built-in security at the core</h4>
                                    <p className="text-black text-sm font-spacemono">Advanced security measures combined with rigorous compliance reporting to ensure safety in every transaction.</p>
                               </div>

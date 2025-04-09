@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
      return (
-          <div className="bg-[#C0B395] relative h-full w-full items-center justify-center px-5 py-8 md:p-8 col-span-3 rounded-[10px] md:rounded-[30px] overflow-hidden flex">
+          <div className="min-w-full w-full max-w-full bg-[#C0B395] relative h-full items-center justify-center px-5 py-8 md:p-8 col-span-3 rounded-[10px] md:rounded-[30px] overflow-hidden flex">
                <form className="flex items-center justify-center w-full h-full space-y-[18px] flex-col">
                     <div className="flex items-start flex-col gap-1.5 w-full">
                          <label className="text-[#191314] text-xs font-spacemono">FULL NAME<span className="text-[#ff0000]">*</span></label>
