@@ -34,29 +34,49 @@ const MobileHeader = () => {
 
 const MobileMenuOverlay = memo(() => {
      return (
-          <div className="fixed inset-0 top-[57px] bg-white z-[9999] px-6 flex flex-col justify-between">
+          <div className="fixed inset-0 top-[57px] bg-white z-[9999] px-4 flex flex-col justify-between">
                {/* Menu Items */}
-               <div className="flex flex-col gap-6 pt-10">
-                    <div className="border-b pb-2">
-                         <p className="text-lg font-medium">Platform ↓</p>
-                    </div>
-                    <div className="border-b pb-2">
-                         <Link href="/company" className="text-lg font-medium">
-                              Company
-                         </Link>
-                    </div>
-                    <div className="border-b pb-2">
-                         <p className="text-lg font-medium">Documentation ↓</p>
+               <div className="z-10 flex flex-col justify-between w-full h-screen py-10 transform bg-white">
+                    <div className="flex flex-col w-full">
+                         <div className="bg-[#fff] border-t-[1px] border-[#eceae5] last:border-b-[1px] py-4">
+                              <button className="flex items-center w-full gap-3 text-left text-gray-800 transition-colors duration-200 hover:bg-gray-50">
+                                   <p className="text-black text-xl md:text-2xl ">Platform</p>
+                                   <div className="w-[10px] h-[10px] transition-transform duration-300 transform -rotate-0">
+                                        <Image src='/assets/icons/arrow_downward.svg' alt="arrow" width={10} height={10} className=" absolute w-full h-full inset-0" />
+                                   </div>
+                              </button>
+                         </div>
+                         <div className="bg-[#fff] border-t-[1px] border-[#eceae5] last:border-b-[1px] py-4">
+                              <button className="flex items-center w-full gap-3 text-left text-gray-800 transition-colors duration-200 hover:bg-gray-50">
+                                   <p className="text-black text-xl md:text-2xl">Company</p>
+                              </button>
+                         </div>
+                         <div className="bg-[#fff] border-t-[1px] border-[#eceae5] last:border-b-[1px] py-4">
+                              <button className="flex items-center w-full gap-3 text-left text-gray-800 transition-colors duration-200 hover:bg-gray-50">
+                                   <p className="text-black text-xl md:text-2xl">Documentation</p>
+                                   <div className="w-[10px] h-[10px] transition-transform duration-300 transform -rotate-0">
+                                        <Image src='/assets/icons/arrow_downward.svg' alt="arrow" width={10} height={10} className=" absolute w-full h-full inset-0" />
+                                   </div>
+                              </button>
+                         </div>
                     </div>
                </div>
 
-               <div className="flex flex-col gap-4 mb-10">
-                    <Link href="/contact">
-                         <button className="w-full bg-[#F2FF66] hover:bg-[#F6FF94] text-black text-xs font-spacemono py-3 rounded-lg uppercase flex items-center justify-center gap-2">
-                              Start Now →
-                         </button>
-                    </Link>
-               </div>
+               <Link href="/contact" className="w-full">
+                    <button className="px-3 pb-5 pt-5 rounded-lg font-normal text-xs lg:text-sm tracking-[0.1em] w-full mb-20 h-fit uppercase justify-center flex gap-2 items-center transition-all duration-300 text-black bg-[#F2FF66] hover:bg-[#F6FF94] group">
+                         <p className="text-black text-xs tracking-[0.1em] uppercase font-spacemono">
+                              Start Now
+                         </p>
+                         <div className="w-[10px] h-[10px] transition-transform duration-300 transform rotate-45 group-hover:-rotate-0">
+                              <Image
+                                   src="/assets/icons/arrow_outward.svg"
+                                   alt="arrow_outward"
+                                   width={10}
+                                   height={10}
+                              />
+                         </div>
+                    </button>
+               </Link>
           </div>
      )
 })
