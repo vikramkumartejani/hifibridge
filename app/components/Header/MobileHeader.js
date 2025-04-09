@@ -1,70 +1,66 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+"use client"
+import { useState, memo } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { MenuButton } from "./MenuButton"
 
 const MobileHeader = () => {
+     const [menuOpen, setMenuOpen] = useState(false)
+
+     const handleMenuToggle = () => {
+          setMenuOpen((prevState) => !prevState)
+     }
+
      return (
-          <div className='w-full pt-3 pb-3 z-[99999] bg-white px-0 relative block lg:hidden'>
-               <div className='flex items-center justify-between w-full'>
-                    <div className='flex justify-start w-full'>
-                         <Link href='https://dashboard.hifibridge.com/signin'>
-                              <button className='px-3 pb-[9px] pt-[9px] rounded-lg font-normal text-xs lg:text-sm tracking-[0.1em] w-fit h-fit uppercase justify-center flex gap-2 items-center transition-all duration-300 text-black bg-[#eceae5] group'>
-                                   <p className='text-black text-xs tracking-[0.1em] uppercase font-spacemono'>Login</p>
-                              </button>
+          <>
+               <div className={`w-full pt-3 pb-3 z-[99999] bg-white block lg:hidden ${menuOpen ? "fixed top-0 left-0 right-0 px-4" : "relative"}`}>
+                    <div className="flex items-center justify-between w-full">
+                         <Link href="https://dashboard.hifibridge.com/signin">
+                              <button className="px-3 py-[9px] rounded-lg text-xs font-spacemono bg-[#eceae5] text-black tracking-[0.1em] uppercase">LOGIN</button>
+                         </Link>
+
+                         <Link href="/">
+                              <Image src="/assets/logo.svg" alt="logo" width={50} height={20} />
+                         </Link>
+
+                         <MenuButton isOpen={menuOpen} onClick={handleMenuToggle} />
+                    </div>
+               </div>
+
+               {menuOpen && <MobileMenuOverlay onClose={handleMenuToggle} />}
+          </>
+     )
+}
+
+const MobileMenuOverlay = memo(() => {
+     return (
+          <div className="fixed inset-0 top-[57px] bg-white z-[9999] px-6 flex flex-col justify-between">
+               {/* Menu Items */}
+               <div className="flex flex-col gap-6 pt-10">
+                    <div className="border-b pb-2">
+                         <p className="text-lg font-medium">Platform ↓</p>
+                    </div>
+                    <div className="border-b pb-2">
+                         <Link href="/company" className="text-lg font-medium">
+                              Company
                          </Link>
                     </div>
-                    <div className='relative z-10 flex justify-center w-full'>
-                         <Link href='/'>
-                              <Image src='/assets/logo.svg' alt='logo' width={50} height={20} />
-                         </Link>
+                    <div className="border-b pb-2">
+                         <p className="text-lg font-medium">Documentation ↓</p>
                     </div>
-                    <div className='flex justify-end w-full'>
-                         <button className='z-10 flex items-center justify-center w-12 h-12 transition-transform cursor-pointer'>
-                              <div className="relative flex flex-col w-8 gap-[4px]">
-                                   <span
-                                        className="w-full absolute h-[1px] z-10 bg-black"
-                                        style={{
-                                             left: "50%",
-                                             top: "-4px",
-                                             willChange: "transform",
-                                             transform: "translateX(-50%) translateY(-50%)",
-                                        }}
-                                   ></span>
-                                   <span
-                                        className="w-full absolute h-[1px] z-10 bg-black"
-                                        style={{
-                                             left: "50%",
-                                             top: "0px",
-                                             willChange: "transform",
-                                             transform: "translateX(-50%) translateY(-50%)",
-                                             opacity: 1,
-                                        }}
-                                   ></span>
-                                   <span
-                                        className="w-full absolute h-[1px] z-10 bg-black"
-                                        style={{
-                                             left: "50%",
-                                             bottom: "-4px",
-                                             opacity: 1,
-                                             willChange: "transform",
-                                             transform: "translateX(-50%) translateY(50%)",
-                                        }}
-                                   ></span>
-                                   <span
-                                        className="w-full absolute h-[1px] z-10 bg-black"
-                                        style={{
-                                             left: "50%",
-                                             bottom: "-8px",
-                                             willChange: "transform",
-                                             transform: "translateX(-50%) translateY(50%)",
-                                        }}
-                                   ></span>
-                              </div>
+               </div>
+
+               <div className="flex flex-col gap-4 mb-10">
+                    <Link href="/contact">
+                         <button className="w-full bg-[#F2FF66] hover:bg-[#F6FF94] text-black text-xs font-spacemono py-3 rounded-lg uppercase flex items-center justify-center gap-2">
+                              Start Now →
                          </button>
-                    </div>
+                    </Link>
                </div>
           </div>
      )
-}
+})
+
+MobileMenuOverlay.displayName = "MobileMenuOverlay"
 
 export default MobileHeader
