@@ -318,47 +318,6 @@ export function InstantBankTransfersContent() {
      )
 }
 
-export function StablecoinsMobileBox() {
-     return (
-          <div className="bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] rounded-2xl p-6 shadow-lg overflow-hidden relative">
-               <div className="flex flex-col items-center">
-                    <div className="relative z-10 w-[60%] mb-4">
-                         <Image
-                              src="/assets/card17.webp"
-                              alt="Stablecoin card"
-                              width={200}
-                              height={200}
-                              className="w-full h-auto rounded-lg"
-                         />
-                    </div>
-
-                    <div className="relative z-10 flex items-center justify-center w-[40px] h-[40px] bg-[#C0B395] rounded-full mb-4">
-                         <Image
-                              src="/assets/slider-one-icon.svg"
-                              alt="Stablecoin icon"
-                              width={24}
-                              height={24}
-                              className="w-[24px] h-[24px]"
-                         />
-                    </div>
-
-                    <div className="text-white text-center mb-2 z-10">
-                         <h4 className="font-medium text-lg">Super Payments API</h4>
-                         <p className="text-sm text-gray-300 mt-1">Fast, secure stablecoin transactions</p>
-                    </div>
-
-                    <div className="absolute inset-0 opacity-20">
-                         <svg width="100%" height="100%" viewBox="0 0 300 300">
-                              <path d="M150 0 L300 150 L150 300 L0 150 Z" fill="none" stroke="#C0B395" strokeWidth="1" />
-                              <circle cx="150" cy="150" r="50" fill="none" stroke="#C0B395" strokeWidth="1" />
-                              <circle cx="150" cy="150" r="100" fill="none" stroke="#C0B395" strokeWidth="0.5" />
-                         </svg>
-                    </div>
-               </div>
-          </div>
-     )
-}
-
 export const slides = [
      {
           id: 1,

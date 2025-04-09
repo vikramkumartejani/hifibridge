@@ -7,13 +7,11 @@ import {
      DecentralizedLedgerContent,
      VirtualAccountsContent,
      InstantBankTransfersContent,
-     StablecoinsMobileBox,
      slides,
 } from "./Slider/SliderContent"
 
 const SLIDE_INTERVAL = 4000
 
-// Client component for interactive slider functionality
 export default function Slider() {
      const [currentIndex, setCurrentIndex] = useState(0)
      const [progress, setProgress] = useState(0)
@@ -82,7 +80,6 @@ export default function Slider() {
 
      const currentSlide = slides[currentIndex]
 
-     // Render the appropriate content based on slide type
      const renderRightContent = () => {
           switch (currentSlide.type) {
                case "stablecoins":
