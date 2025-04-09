@@ -78,8 +78,6 @@ export default function VirtualAccounts() {
 
                          <div className="flex items-center justify-center order-1 md:order-1 h-full w-full md:w-1/2">
                               <div className="aspect-[5/7] md:max-w-[430px] w-full rounded-[30px] relative overflow-hidden">
-                                   {/* <div className="relative flex flex-col items-center justify-center w-full h-full min-h-[400px] gap-4">
-                                   </div> */}
                                    <FloatingIconsGrid />
                               </div>
                          </div>
