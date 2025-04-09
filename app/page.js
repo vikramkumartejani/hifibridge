@@ -13,7 +13,7 @@ export default function Home() {
       <div className="w-full h-auto pb-[100px] md:pb-[200px]"></div>
       <ModernRails />
       <div className="w-full h-auto pb-[100px] md:pb-[200px] "></div>
-      <Slider/>
+      <Slider/> 
       <div className="w-full h-auto pb-[100px] md:pb-[200px]"></div>
       <FutureBusiness />
       <div className="w-full h-auto pb-[60px] md:pb-[120px]"></div>
