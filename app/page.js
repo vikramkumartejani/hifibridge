@@ -4,6 +4,7 @@ import GetStarted from "./components/GetStarted";
 import Hero from "./components/Hero";
 import HifiServes from "./components/HifiServes";
 import ModernRails from "./components/ModernRails";
+import Slider from "./components/Slider";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
       <Hero />
       <div className="w-full h-auto pb-[100px] md:pb-[200px]"></div>
       <ModernRails />
+      <div className="w-full h-auto pb-[100px] md:pb-[200px] "></div>
+      <Slider/>
       <div className="w-full h-auto pb-[100px] md:pb-[200px]"></div>
       <FutureBusiness />
       <div className="w-full h-auto pb-[60px] md:pb-[120px]"></div>

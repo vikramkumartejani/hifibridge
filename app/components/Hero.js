@@ -20,12 +20,12 @@ const Hero = () => {
                </div>
                <div className=' col-span-1 flex flex-col overflow-hidden h-[85vh] md:h-full'>
                     <div className='relative flex flex-col justify-end order-2 gap-4 py-8 overflow-hidden bg-black md:order-1 rounded-3xl px-7' style={{height: "78%"}}>
-                         <Image src='/assets/home-hero.webp' width={1000} height={1000} alt='hero' className='z-10 object-cover pointer-events-none absolute w-full h-full inset-0' />
+                         <Image src='/assets/home-hero.webp' width={1497} height={1893} alt='hero' className='z-10 object-cover pointer-events-none absolute w-full h-full inset-0 top-0 bottom-0 right-0 left-0' />
                          <div className='absolute inset-0 z-20 pointer-events-none bg-gradient-to-t from-[#33171ECC] to-transparent to-30%'></div>
                          <h3 className='z-30 text-white text-8xl leading-8xl'>3.1</h3>
                          <p className='text-sm z-30 text-white font-spacemono'>Settle Payments in Seconds</p>
                     </div>
-                    <div className='flex flex-col justify-center order-1 gap-4 py-6 md:order-2 bg-[#406354] rounded-3xl px-7'>
+                    <div className='flex flex-col justify-center order-1 gap-4 py-8 md:order-2 bg-[#406354] rounded-3xl px-7' style={{height: "22%"}}>
                          <div className='flex flex-col gap-4'>
                               <p className='text-sm max-w-2xl text-white font-spacemono'>HIFI is the next-generation payments and API platform for global businesses to move money at the speed of the internet.</p>
                               <button className='flex gap-2 items-center'>

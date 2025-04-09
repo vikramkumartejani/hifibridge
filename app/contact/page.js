@@ -21,6 +21,7 @@ export default function ContactUS() {
                          <h2 className="text-black text-4xl leading-4xl md:text-5xl md:leading-5xl">Ready to modernize your payments?</h2>
                          <p className="text-black text-sm pb-12 font-spacemono">Let's get there together. Book a time to meet with our team for a HIFI Demo.</p>
                     </div>
+                    
                     {/* Form */}
                     <div className="bg-[#C0B395] relative h-full w-full items-center justify-center p-8 col-span-3 rounded-[30px] overflow-hidden hidden md:flex">
                          {/* <form className="flex items-center justify-center w-full h-full space-y-[18px] flex-col">
@@ -69,24 +70,6 @@ export default function ContactUS() {
                                    </select>
                               </div>
                          </form> */}
-                         <div id="hubspotForm-0002" data-hs-forms-root="true" className="flex items-center justify-center w-full h-full">
-                              <iframe
-                                   id="hs-form-iframe-3"
-                                   className="hs-form-iframe"
-                                   title="Form 3"
-                                   scrolling="no"
-                                   width="100%"
-                                   height="564"
-                                   style={{
-                                        position: 'static',
-                                        border: 'none',
-                                        display: 'block',
-                                        overflow: 'hidden',
-                                        width: '100%',
-                                        height: '564px',
-                                   }}
-                              />
-                         </div>
                     </div>
                </div>
 
