@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Form from "./Form";
 
 export const metadata = {
      title: 'Contact | HIFI',
@@ -21,14 +20,60 @@ export default function ContactUS() {
                          </div>
                          <h2 className="text-black text-4xl leading-4xl md:text-5xl md:leading-5xl">Ready to modernize your payments?</h2>
                          <p className="text-black text-sm pb-12 font-spacemono">Let's get there together. Book a time to meet with our team for a HIFI Demo.</p>
-                         <div className="md:hidden block">
-                              <Form />
-                         </div>
                     </div>
-
+                    
                     {/* Form */}
-                    <div className="min-w-full w-full max-w-full hidden md:block">
-                         <Form />
+                    <div className="bg-[#C0B395] relative h-full w-full items-center justify-center p-8 col-span-3 rounded-[30px] overflow-hidden hidden md:flex">
+                         <form className="flex items-center justify-center w-full h-full space-y-[18px] flex-col">
+                              <div className="flex items-start flex-col gap-1.5 w-full">
+                                   <label className="text-[#191314] text-xs font-spacemono">FULL NAME<span className="text-[#ff0000]">*</span></label>
+                                   <input type="text" placeholder="Your full name" className="border border-[#cbd6e2] rounded-[15px] w-full px-[15px] bg-[#f5f8fa] outline-none h-[40px] focus:border-[#52a8eccc]" />
+                              </div>
+                              <div className="flex items-start flex-col gap-1.5 w-full">
+                                   <label className="text-[#191314] text-xs font-spacemono">EMAIL<span className="text-[#ff0000]">*</span></label>
+                                   <input type="gmail" placeholder="Your email" className="border border-[#cbd6e2] rounded-[15px] w-full px-[15px] bg-[#f5f8fa] outline-none h-[40px] focus:border-[#52a8eccc]" />
+                              </div>
+                              <div className="flex items-start flex-col gap-1.5 w-full">
+                                   <label className="text-[#191314] text-xs font-spacemono">COMPANY URL<span className="text-[#ff0000]">*</span></label>
+                                   <input type="gmail" placeholder="Your company website" className="border border-[#cbd6e2] rounded-[15px] w-full px-[15px] bg-[#f5f8fa] outline-none h-[40px] focus:border-[#52a8eccc]" />
+                              </div>
+                              <div className="flex items-start flex-col gap-1.5 w-full">
+                                   <label className="text-[#191314] text-xs font-spacemono">COUNTRY / REGION<span className="text-[#ff0000]">*</span></label>
+                                   <select className="border border-[#cbd6e2] rounded-[15px] w-full px-[15px] bg-[#f5f8fa] outline-none h-[40px] focus:border-[#52a8eccc]">
+                                        <option>Africa</option>
+                                        <option>Asia</option>
+                                        <option>Europe</option>
+                                        <option>LatAm</option>
+                                        <option>Middle East</option>
+                                        <option>United Kingdon</option>
+                                        <option>United States</option>
+                                        <option>Other</option>
+                                   </select>
+                              </div>
+                              <div className="flex items-start flex-col gap-1.5 w-full">
+                                   <label className="text-[#191314] text-xs font-spacemono">ESTIMATED MONTHLY VOLUME<span className="text-[#ff0000]">*</span></label>
+                                   <select className="border border-[#cbd6e2] rounded-[15px] w-full px-[15px] bg-[#f5f8fa] outline-none h-[40px] focus:border-[#52a8eccc]">
+                                        <option>$250K - $1M</option>
+                                        <option>$1M - $5M</option>
+                                        <option>$5M - $15M</option>
+                                        <option>$15M - $30M</option>
+                                        <option>$30M - $75M</option>
+                                        <option>$75M - $100M</option>
+                                   </select>
+                              </div>
+                              <div className="flex items-start flex-col gap-1.5 w-full">
+                                   <label className="text-[#191314] text-xs font-spacemono">READY TO MOVE MONEY?<span className="text-[#ff0000]">*</span></label>
+                                   <select className="border border-[#cbd6e2] rounded-[15px] w-full px-[15px] bg-[#f5f8fa] outline-none h-[40px] focus:border-[#52a8eccc]">
+                                        <option>1 Month</option>
+                                        <option>1 Month - 3 Months</option>
+                                        <option>3 Months - 6 Months</option>
+                                   </select>
+                              </div>
+
+                              <div className="flex items-start justify-items-start w-full py-5">
+                                   <button className="bg-[#F2FF66] py-3 px-6 font-spacemono text-xs leading-[12px] text-[#191314] font-bold rounded-[14px]">Submit</button>
+                              </div>
+                         </form>
                     </div>
                </div>
 
@@ -45,28 +90,28 @@ export default function ContactUS() {
                     <div className="grid h-full grid-cols-1 col-span-2 bg-white md:grid-cols-2">
                          <div className="col-span-1 mt-[-1px]">
                               <div className="relative flex flex-col w-full h-full px-5 pt-7 pb-10 md:px-8 md:pt-10 md:pb-16 transition-all duration-300 border border-[#ECEAE5] rounded-3xl group gap-4">
-                                   <img src="/assets/icons/Contact-InstantIntegration.svg" alt="Instant integration, infinite flexibility" loading="lazy" width={40} height={40} />
+                                   <img src="/assets/icons/Contact-InstantIntegration.svg" alt="Instant integration, infinite flexibility" loading="lazy" width={40} height={40}/>
                                    <h4 className="text-black text-xl md:text-2xl">Instant integration, infinite flexibility</h4>
                                    <p className="text-black text-sm font-spacemono">Step into the future with a cutting-edge payments stack sculpted for industry leading businesses.</p>
                               </div>
                          </div>
                          <div className="col-span-1 mt-[-1px]">
                               <div className="relative flex flex-col w-full h-full px-5 pt-7 pb-10 md:px-8 md:pt-10 md:pb-16 transition-all duration-300 border border-[#ECEAE5] rounded-3xl group gap-4">
-                                   <img src="/assets/icons/Contact-UnlockGrowth.svg" alt="Contact-UnlockGrowth" loading="lazy" width={40} height={40} />
+                                   <img src="/assets/icons/Contact-UnlockGrowth.svg" alt="Contact-UnlockGrowth" loading="lazy" width={40} height={40}/>
                                    <h4 className="text-black text-xl md:text-2xl">Unlock next-gen payments growth </h4>
                                    <p className="text-black text-sm font-spacemono">Accelerate your operations and watch your revenue growth soar with a reimagined payments stack.</p>
                               </div>
                          </div>
                          <div className="col-span-1 mt-[-1px]">
                               <div className="relative flex flex-col w-full h-full px-5 pt-7 pb-10 md:px-8 md:pt-10 md:pb-16 transition-all duration-300 border border-[#ECEAE5] rounded-3xl group gap-4">
-                                   <img src="/assets/icons/Contact-LeverageCommerce.svg" alt="Contact-LeverageCommerce" loading="lazy" width={40} height={40} />
+                                   <img src="/assets/icons/Contact-LeverageCommerce.svg" alt="Contact-LeverageCommerce" loading="lazy" width={40} height={40}/>
                                    <h4 className="text-black text-xl md:text-2xl">Leverage the future of commerce</h4>
                                    <p className="text-black text-sm font-spacemono">Leverage our multi-wallet system and reach millions of new customers.</p>
                               </div>
                          </div>
                          <div className="col-span-1 mt-[-1px]">
                               <div className="relative flex flex-col w-full h-full px-5 pt-7 pb-10 md:px-8 md:pt-10 md:pb-16 transition-all duration-300 border border-[#ECEAE5] rounded-3xl group gap-4">
-                                   <img src="/assets/icons/Contact-BuiltInCore.svg" alt="Instant integration, infinite flexibility" loading="lazy" width={40} height={40} />
+                                   <img src="/assets/icons/Contact-BuiltInCore.svg" alt="Instant integration, infinite flexibility" loading="lazy" width={40} height={40}/>
                                    <h4 className="text-black text-xl md:text-2xl">Built-in security at the core</h4>
                                    <p className="text-black text-sm font-spacemono">Advanced security measures combined with rigorous compliance reporting to ensure safety in every transaction.</p>
                               </div>
